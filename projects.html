@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="css/bulma-slate.css">
+  </head>
+  <body>
+    <section class="section" style="padding-bottom: 0">
+      <div class="container">
+        <div class="tabs is-centered">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Résumé</a></li>
+            <li class="is-active"><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <p class="title is-4">Open-source projects</p>
+          <p class="subtitle is-6">Quick overview</p>
+        </div>
+
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">lg15</p>
+                <a href="https://github.com/aprelev/lg15" class="card-header-icon">
+                  <span class="button is-small">View on GitHub</span>
+                </a>
+              </header>
+              <div class="card-content">
+                <div class="tags are-normal">
+                  <span class="tag">Cryptography</span>
+                  <span class="tag">SIMD</span>
+                  <span class="tag">C99</span>
+                  <span class="tag">Apache 2.0</span>
+                </div>
+                <div class="content">
+                  <p>
+                    Multiple implementations of Russian national block cipher GOST R 34.12-2015 Kuznyechik
+                    tuned to yield high performance on <code>amd64</code> processors.
+                  </p>
+                  <p>
+                    It was written to accompany the <a href="https://habr.com/en/post/312224/">article on performance</a>
+                    of said block cipher.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">contest</p>
+                  <a href="https://github.com/aprelev/contest" class="card-header-icon">
+                    <span class="button is-small">View on GitHub</span>
+                  </a>
+                </header>
+                <div class="card-content">
+                  <div class="tags are-normal">
+                    <span class="tag">DDT</span>
+                    <span class="tag">Framework</span>
+                    <span class="tag">C99</span>
+                    <span class="tag">GPL 3.0</span>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Extendable framework for data-driven testing; it provides means to
+                      extract data from files in a number of formats, and
+                      and utilise it in user-defined tests.
+                    </p>
+                    <p>
+                      The primary purpose of this project was for it to be used as an
+                      automated CAVP conformance testing tool, where one would have to test
+                      his implementation of cryptographic mechanism against data provided by validating authority.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+  </body>
+</html>
