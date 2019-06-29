@@ -12,7 +12,7 @@
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item has-text-link" style="font-family: 'Pacifico" href="index.html">
-            Apr.lv
+            Aprelev
           </a>
           <a class="navbar-item is-tab" href="resume.html">
             Résumé
@@ -27,7 +27,7 @@
         <div class="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-item">
-              <a class="button is-small">
+              <a class="button is-small is-info">
                 Download CV as .pdf
               </a>
             </div>
@@ -47,8 +47,18 @@
                 Wrote code in
                 <a href="https://webstore.ansi.org/Standards/ISO/ISOIEC98992011">C</a> (fluent) and
                 <a href="https://www.iso.org/standard/68564.html">C++</a> (rusty).</li>
-              <li>Built code with <strong>CMake</strong>, <strong>Make</strong>, and <strong>MSBuild</strong>.</li>
-              <li>Compiled code with <strong>MSVC</strong>, <strong>GCC</strong>, and <strong>Clang</strong>.</li>
+              <li>
+                Built code with
+                <a href="https://cmake.org">CMake</a>,
+                <a href="https://www.gnu.org/s/make/manual/make.html">Make</a>, and
+                <a href="https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild">MSBuild</a>.
+              </li>
+              <li>
+                Compiled code with
+                <a href="https://visualstudio.microsoft.com/vs/">MSVC</a>,
+                <a href="https://gcc.gnu.org">GCC</a>, and
+                <a href="https://clang.llvm.org">Clang</a>.
+              </li>
               <li>Tested code with Google's
                 <a href="https://github.com/google/googlemock">googlemock</a> and
                 <a href="https://github.com/google/benchmark">benchmark</a>.</li>
@@ -63,23 +73,62 @@
           <p class="subtitle is-6">Sorted by recentness</p>
           <div class="box">
             <p class="subtitle is-5" style="margin-bottom: 1.75rem">
-              2015 &ndash; 2019
+              2015 &ndash; Present
             </p>
             <p class="title is-5">
               Full-Time Software Engineer at <a href="https://infotecs.us/">Infotecs JSC</a>
             </p>
+            <div class="tags are-normal">
+              <span class="tag is-primary">C99</span>
+              <span class="tag is-primary">CMake</span>
+              <span class="tag is-primary">Apache Ant</span>
+              <span class="tag is-primary">JetBrains TeamCity</span>
+            </div>
             <p>
               <ul>
-                <li>Worked with C99 and C11, CMake, Apache Ant, and Jetbrains TeamCity.</li>
-                <li>Reengineered the back-end implementation of both
-                    national (GOST R 34-x) and international (FIPS, NIST) cryptographic mechanisms
-                    (block ciphers, hash functions, digital signatures, handshaking protocols).</li>
-                <li>Ensured high performance by utilising SIMD instructions sets and
-                    hand-written assembly for critical code.</li>
-                <li>Applied SOLID principles to develop readable, maintanable and scalable code.</li>
-                <li>Enabled support for wide range of compilers and operating systems.</li>
-                <li>Implemented flexible CI & CD cross-building chains with
-                    reproducible dependencies resolution; sanity, integration, regression, and performance testing.</li>
+                <li>
+                  Reengineered the back-end implementation of both
+                  national and international cryptographic mechanisms:
+                  <ul>
+                    <li>
+                      symmetric: block ciphers, modes of operations, MACs;
+                    </li>
+                    <li>
+                      asymmetric: elliptic curves, digital signatures, key exchanges, encryption schemes;
+                    </li>
+                    <li>
+                      auxiliary: hash functions, HMACs, KDFs, PRFs, PRNGs, key wrapping algorithms.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Ensured high performance by utilising SIMD instructions sets and
+                  hand-written assembly for critical code.
+                </li>
+                <li>
+                  Applied SOLID principles to develop readable, maintanable and scalable code:
+                  <ul>
+                    <li>
+                      introduced abstract interfaces for aforementioned mechanisms,
+                    </li>
+                    <li>
+                      enclosed implementation specifics within private APIs,
+                    </li>
+                    <li>
+                      implemented abstract functional and conformance tests.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Enabled support for wide range of compilers and operating systems.
+                </li>
+                <li>
+                  Implemented sanity, integration, regression, and performance tests.
+                </li>
+                <li>
+                  Established flexible CI & CD cross-building chains with
+                  reproducible dependencies resolution.
+                </li>
               </ul>
             </p>
           </div>
@@ -112,7 +161,7 @@
             </ul>
           </p>
           <p>
-            In case you are interested, I have compiled <a href="projects.html">a quick overview</a> of my recent projects.
+            In case if interest, I have compiled <a href="projects.html">a quick overview</a> of my recent projects.
           </p>
         </div>
       </div>
