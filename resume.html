@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Résumé /apr.lv</title>
-    <link rel="stylesheet" href="css/theme-darkly.css"/>
-    <link rel="stylesheet" href="css/font-pacifico.css"/>
-  </head>
-  <body>
-    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item has-text-link" style="font-family: 'Pacifico" href="index">
-            apr.lv
-          </a>
-          <a class="navbar-item is-tab has-text-link" href="resume">
-            Résumé
-          </a>
-          <a class="navbar-item is-tab" href="projects">
-            Projects
-          </a>
-          <a class="navbar-item is-tab" href="contacts">
-            Contacts
-          </a>
-        </div>
-        <div class="navbar-menu">
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <a class="button is-small is-info" href="static/cv-thomas-aprelev.pdf">
-                Download CV as .pdf
-              </a>
-            </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Résumé /apr.lv</title>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/spacing.min.css" />
+  <link rel="stylesheet" href="assets/css/font-pacifico.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="assets/js/tabs.js"></script>
+</head>
+
+<body>
+  <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" style="font-family: 'Pacifico" href="index">
+          apr.lv
+        </a>
+        <a class="navbar-item is-tab has-text-link" href="resume">
+          Résumé
+        </a>
+        <a class="navbar-item is-tab" href="projects">
+          Projects
+        </a>
+        <a class="navbar-item is-tab" href="contacts">
+          Contacts
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a class="button is-small is-link is-light" href="static/cv-thomas-aprelev.pdf">
+              Download CV as .pdf
+            </a>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="section">
-      <div class="container">
-        <div class="content">
+  <section class="section">
+    <div class="container">
+      <div class="content">
+
+        <!-- Proficiency -->
+        <div class="box is-shadowless">
           <p class="title is-4">Proficiency</p>
           <p class="subtitle is-6">Recent stack of languages & technologies</p>
           <p>
@@ -65,129 +74,327 @@
                 <a href="https://github.com/google/benchmark">benchmark</a>.</li>
             </ul>
           </p>
-          <hr>
-        </div>
-      </div>
-      <div class="container">
-        <div class="content">
-          <p class="title is-4">Experience & Education</p>
-          <p class="subtitle is-6">Sorted by recentness</p>
-          <div class="box">
-            <p class="subtitle is-5" style="margin-bottom: 1.75rem">
-              2019 &mdash; Present
-            </p>
-            <p class="title is-5">
-              Sr. Software Engineer at &nbsp;<a href="https://anjuna.io/">Anjuna Security</a>
-            </p>
-            <div class="tags are-normal">
-              <span class="tag is-primary">Hardware Security</span>
-              <span class="tag is-primary">C 99/11</span>
-            </div>
-            <p>
-              <ul>
-                <li>
-                  Worked on Intel SGX runtime which allows unmodified binaries
-                  to leverage the hardware-grade runtime security.
-                </li>
-              </ul>
-            </p>
-          </div>
-          <div class="box">
-            <p class="subtitle is-5" style="margin-bottom: 1.75rem">
-              2015 &mdash; 2019 &nbsp; (3 years 11 months)
-            </p>
-            <p class="title is-5">
-              Software Engineer at &nbsp;<a href="https://infotecs.us/">Infotecs</a>
-            </p>
-            <div class="tags are-normal">
-              <span class="tag is-primary">Cryptography</span>
-              <span class="tag is-primary">C 89/99</span>
-              <span class="tag is-primary">C++ 03/11</span>
-              <span class="tag is-primary">Make & MSBuild</span>
-              <span class="tag is-primary">Apache Ant</span>
-              <span class="tag is-primary">CI & CD</span>
-            </div>
-            <p>
-              <ul>
-                <li>
-                  Reengineered the back-end implementation of both
-                  national and international cryptographic mechanisms:
-                  <ul>
-                    <li>
-                      symmetric: block ciphers, modes of operations, MACs;
-                    </li>
-                    <li>
-                      asymmetric: elliptic curves, digital signatures, key exchanges, encryption schemes;
-                    </li>
-                    <li>
-                      auxiliary: hash functions, HMACs, KDFs, PRFs, PRNGs, key wrapping algorithms.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Ensured high performance of mechanisms:
-                  <ul>
-                    <li>
-                      tripled performance of some primitives by utilising SIMD instructions sets and
-                      hand-written assembly for critical code,
-                    </li>
-                    <li>
-                      doubled performance of other primitives by introducing
-                      LUT tables and algorithmic optimisations.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Applied SOLID principles to develop readable, maintanable and scalable code:
-                  <ul>
-                    <li>
-                      introduced abstract interfaces for aforementioned mechanisms,
-                    </li>
-                    <li>
-                      enclosed implementation specifics within private APIs,
-                    </li>
-                    <li>
-                      implemented abstract functional and conformance tests.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Enabled support for wide range of compilers and operating systems.
-                </li>
-                <li>
-                  Implemented sanity, integration, regression, and performance tests,
-                  achieved 98% coverage in over 6000 tests.
-                </li>
-                <li>
-                  Established flexible CI & CD cross-building chains with
-                  reproducible dependencies resolution.
-                </li>
-              </ul>
-            </p>
-            <a class="button is-small is-info" href="static/keynote-infotecs.pdf">
-              Download keynote as .pdf
-            </a>
-          </div>
-          <div class="box">
-            <p class="subtitle is-5" style="margin-bottom: 1.75rem">
-                2010 &mdash; 2016 &nbsp; (5 years 10 months)
-            </p>
-            <p class="title is-5">
-                Student at &nbsp;<a href="http://www.bmstu.ru/en/">Bauman University</a>
-            </p>
-            <p>
-              <ul>
-                <li>Had been granted BS and MS degrees in Computer Security.</li>
-                <li>Majored in Cryptography and Applied Mathematics.</li>
-                <li>Graduated with honours and perfect GPA.</li>
-                <li>Had degree verified and evaluated by <a href="https://www.wes.org/">WES</a> (ref. #4045139).</li>
-              </ul>
-            </p>
-          </div>
-          <hr>
         </div>
 
-        <div class="content">
+        <!-- Experience & education -->
+        <div class="box is-shadowless">
+          <div class="level">
+            <!-- Left side -->
+            <div class="level-left">
+              <div class="level-item">
+                <div class="content">
+                  <p class="title is-4">Experience & Education</p>
+                  <p class="subtitle is-6">Sorted by recentness</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right side -->
+            <div class="level-right">
+              <div class="level-item">
+                <div class="content">
+                  <div class="tabs is-small is-toggle has-margin-top-minus-30">
+                    <ul>
+                      <li class="is-active"><a>View as summary</a></li>
+                      <li class=""><a>View as timeline</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs-content">
+            <div class="tab-content is-active">
+              <!-- Anjuna -->
+              <div class="box is-shadowless">
+                <p class="subtitle is-6 has-padding-bottom-12">
+                  2019 &mdash; Present
+                </p>
+                <p class="title is-5">
+                  Sr. Software Engineer at <a href="https://anjuna.io/">Anjuna Security</a>
+                </p>
+    
+                <div class="tags">
+                  <span class="tag is-info is-light">Intel SGX</span>
+                  <span class="tag is-info is-light">C 99/11</span>
+                  <span class="tag is-info is-light">Assembly</span>
+                  <span class="tag is-info is-light">CMake</span>
+                </div>
+                <p>
+                  <ul>
+                    <li>
+                      Worked on Intel SGX runtime which allows unmodified binaries
+                      to leverage the hardware-grade runtime security.
+                    </li>
+                  </ul>
+                </p>
+              </div>
+    
+              <!-- Infotecs -->
+              <div class="box is-shadowless">
+                <p class="subtitle is-6 has-padding-bottom-12">
+                  2015 &mdash; 2019
+                </p>
+                <p class="title is-5">
+                  Software Engineer at <a href="https://infotecs.us/">Infotecs</a>
+                </p>
+                <div class="tags are-normal">
+                  <span class="tag is-info is-light">C 89/99</span>
+                  <span class="tag is-info is-light">C++ 03/11</span>
+                  <span class="tag is-info is-light">MSBuild</span>
+                  <span class="tag is-info is-light">Make</span>
+                  <span class="tag is-info is-light">Apache Ant</span>
+                </div>
+                <p>
+                  <ul>
+                    <li>
+                      Reengineered the back-end implementation of both
+                      national and international cryptographic mechanisms:
+                      <ul>
+                        <li>
+                          symmetric: block ciphers, modes of operations, MACs;
+                        </li>
+                        <li>
+                          asymmetric: elliptic curves, digital signatures, key exchanges, encryption schemes;
+                        </li>
+                        <li>
+                          auxiliary: hash functions, HMACs, KDFs, PRFs, PRNGs, key wrapping algorithms.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Ensured high performance of mechanisms:
+                      <ul>
+                        <li>
+                          tripled performance of some primitives by utilising SIMD instructions sets and
+                          hand-written assembly for critical code,
+                        </li>
+                        <li>
+                          doubled performance of other primitives by introducing
+                          LUT tables and algorithmic optimisations.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Applied SOLID principles to develop readable, maintanable and scalable code:
+                      <ul>
+                        <li>
+                          introduced abstract interfaces for aforementioned mechanisms,
+                        </li>
+                        <li>
+                          enclosed implementation specifics within private APIs,
+                        </li>
+                        <li>
+                          implemented abstract functional and conformance tests.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Enabled support for wide range of compilers and operating systems.
+                    </li>
+                    <li>
+                      Implemented sanity, integration, regression, and performance tests,
+                      achieved 98% coverage in over 6000 tests.
+                    </li>
+                    <li>
+                      Established flexible CI & CD cross-building chains with
+                      reproducible dependencies resolution.
+                    </li>
+                  </ul>
+                </p>
+                <a class="button is-small is-link is-light" href="static/keynote-infotecs.pdf">
+                  Download keynote as .pdf
+                </a>
+              </div>
+  
+              <!-- University -->
+              <div class="box is-shadowless">
+                <p class="subtitle is-6 has-padding-bottom-10">
+                    2010 &mdash; 2016
+                </p>
+                <p class="title is-5">
+                    Student at <a href="http://www.bmstu.ru/en/">Bauman University</a>
+                </p>
+                <p>
+                  <ul>
+                    <li>Received BSc and MSc degrees in <strong>Computer Security</strong>.</li>
+                    <li>Majored in <strong>Cryptography and Applied Mathematics</strong>.</li>
+                    <li>Graduated <strong>with honours</strong> (<a href="https://www.wes.org/">WES</a> evaluation ref. #4045139).</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="timeline">
+                <!-- Now -->
+                <header class="timeline-header">
+                  <span class="tag">Present</span>
+                </header>
+    
+                <!-- Started at Anjuna -->
+                <div class="timeline-item">
+                  <div class="timeline-marker is-icon is-medium">
+                    <i class="fa fa-door-open fa-lg has-text-grey-lighter"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <p class="subtitle is-6 has-padding-bottom-12">
+                      October 2019
+                    </p>
+                    <p class="title is-5">
+                      Started as <strong>Sr. Software Engineer</strong> at <a href="https://anjuna.io/">Anjuna Security</a>
+                    </p>
+                  </div>
+                </div>
+    
+                <!-- Quitting Infotecs -->
+                <div class="timeline-item">
+                  <div class="timeline-marker is-icon is-medium">
+                    <i class="fa fa-briefcase fa-lg has-text-grey-lighter"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <p class="subtitle is-6 has-padding-bottom-10">
+                        September 2019
+                    </p>
+                    <p class="title is-5">
+                      Left <a href="https://infotecs.us/">Infotecs</a>
+                    </p>
+                    <div class="tags are-normal">
+                      <span class="tag is-info is-light">C 89/99</span>
+                      <span class="tag is-info is-light">C++ 03/11</span>
+                      <span class="tag is-info is-light">MSBuild</span>
+                      <span class="tag is-info is-light">Make</span>
+                      <span class="tag is-info is-light">Apache Ant</span>
+                    </div>
+                    <p>
+                      <ul>
+                        <li>
+                          Reengineered the back-end implementation of both
+                          national and international cryptographic mechanisms:
+                          <ul>
+                            <li>
+                              symmetric: block ciphers, modes of operations, MACs;
+                            </li>
+                            <li>
+                              asymmetric: elliptic curves, digital signatures, key exchanges, encryption schemes;
+                            </li>
+                            <li>
+                              auxiliary: hash functions, HMACs, KDFs, PRFs, PRNGs, key wrapping algorithms.
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Ensured high performance of mechanisms:
+                          <ul>
+                            <li>
+                              tripled performance of some primitives by utilising SIMD instructions sets and
+                              hand-written assembly for critical code,
+                            </li>
+                            <li>
+                              doubled performance of other primitives by introducing
+                              LUT tables and algorithmic optimisations.
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Applied SOLID principles to develop readable, maintanable and scalable code:
+                          <ul>
+                            <li>
+                              introduced abstract interfaces for aforementioned mechanisms,
+                            </li>
+                            <li>
+                              enclosed implementation specifics within private APIs,
+                            </li>
+                            <li>
+                              implemented abstract functional and conformance tests.
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Enabled support for wide range of compilers and operating systems.
+                        </li>
+                        <li>
+                          Implemented sanity, integration, regression, and performance tests,
+                          achieved 98% coverage in over 6000 tests.
+                        </li>
+                        <li>
+                          Established flexible CI & CD cross-building chains with
+                          reproducible dependencies resolution.
+                        </li>
+                      </ul>
+                    </p>
+                    <a class="button is-small is-link is-light" href="static/keynote-infotecs.pdf">
+                      Download keynote as .pdf
+                    </a>
+                  </div>
+                </div>
+    
+                <!-- Graduated BMSTU -->
+                <div class="timeline-item">
+                  <div class="timeline-marker is-icon is-medium">
+                    <i class="fa fa-graduation-cap fa-lg has-text-grey-lighter"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <p class="subtitle is-6 has-padding-bottom-10">
+                        June 2016
+                    </p>
+                    <p class="title is-5">
+                        Graduated <a href="http://www.bmstu.ru/en/">Bauman University</a>
+                    </p>
+                    <p>
+                      <ul>
+                        <li>Received BSc and MSc degrees in <strong>Computer Security</strong>.</li>
+                        <li>Majored in <strong>Cryptography and Applied Mathematics</strong>.</li>
+                        <li>Graduated <strong>with honours</strong> (<a href="https://www.wes.org/">WES</a> evaluation ref. #4045139).</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+    
+                <!-- Started at Infotecs -->
+                <div class="timeline-item">
+                  <div class="timeline-marker is-icon is-medium">
+                    <i class="fa fa-door-open fa-lg has-text-grey-lighter"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <p class="subtitle is-6 has-padding-bottom-10">
+                        October 2015
+                    </p>
+                    <p class="title is-5">
+                      Started as <strong>Software Engineer</strong> at <a href="https://infotecs.us/">Infotecs</a>
+                    </p>
+                  </div>
+                </div>
+    
+                <!-- Enrolled in BMSTU -->
+                <div class="timeline-item">
+                  <div class="timeline-marker is-icon is-medium">
+                    <i class="fa fa-edit fa-lg has-text-grey-lighter"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <p class="subtitle is-6 has-padding-bottom-10">
+                        September 2010
+                    </p>
+                    <p class="title is-5">
+                        Enrolled in <a href="http://www.bmstu.ru/en/">Bauman University</a>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Limbo -->
+                <header class="timeline-header">
+                  <span class="tag">Limbo</span>
+                </header>
+    
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Miscellaneous -->
+        <div class="box is-shadowless">
           <p class="title is-4">Miscellaneous</p>
           <p class="subtitle is-6">Open-source contributions</p>
           <p>
@@ -201,8 +408,11 @@
             I have compiled a quick overview of my recent projects <a href="projects">here</a>.
           </p>
         </div>
+
       </div>
-    </section>
-    <br>
-  </body>
+    </div>
+  </section>
+  <br>
+</body>
+
 </html>
