@@ -5101,7 +5101,7 @@ label.panel-block {
     display: -webkit-flex;
     position: relative;
     margin-left: 2em;
-    padding-bottom: 2em; }
+    padding-bottom: 2.5em; }
     .timeline .timeline-item::before {
       content: "";
       background-color: #dbdbdb;
