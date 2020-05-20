@@ -3,7 +3,7 @@ $(document).ready(function() {
     var $tabParent = $(this);
     var $tabs = $tabParent.find('li');
     var $contents =
-        $tabParent.parents().next('.tabs-content').find('.tab-content');
+        $tabParent.next('.tabs-content').find('.tab-content');
     $tabs.click(function() {
       var curIndex = $(this).index();
       $tabs.removeClass('is-active');
