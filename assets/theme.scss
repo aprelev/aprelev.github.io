@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Fonts
+// $family-sans-serif: "Rubik", sans-serif;
+$family-primary: "Roboto", sans-serif;
+// $family-secondary: "Rubik";
+$title-family: "Rubik";
+$subtitle-family: "Rubik";
+
+// Colours
+$cultured: #F1F3F5;
+$space-cadet: #1B1F3B;
+$cerulian-blue: #3755BE;
+$congo-pink: #FF8E88;
+
+$wild-blue-yonder: #AFB4D4;
+$french-rose: #FD397A;
+$royal-blue: #5867DD;
+$medium-turquoise: #1DC9B7;
+$selective-yellow: #FFB822;
+$white: #FFFFFF;
+
+// Booleans
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Variables
+$primary: $space-cadet;
+$link: $cerulian-blue;
+$info: $congo-pink;
+$success: $medium-turquoise;
+$warning: $selective-yellow;
+$danger: $french-rose;
+$background: $cultured;
+// $box-shadow: none;
+
+// Timeline
+$timeline-marker-color: $white;
+$timeline-marker-icon-size: 2.33em;
+$timeline-marker-border: none;
+
+@import "./bulma.sass";

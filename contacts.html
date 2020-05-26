@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Contacts /apr.lv</title>
-    <link rel="stylesheet" href="css/theme-darkly.css"/>
-    <link rel="stylesheet" href="css/font-pacifico.css"/>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/font-pacifico.css"/>
+    <script defer src="assets/js/fontawesome-5.min.js"></script>
   </head>
   <body>
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item has-text-link" style="font-family: 'Pacifico'" href="index">
+          <a class="navbar-item" style="font-family: 'Pacifico" href="index">
             apr.lv
           </a>
           <a class="navbar-item is-tab" href="resume">
@@ -27,33 +28,46 @@
         <div class="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-item">
-                <a class="button is-small is-info" href="static/cv-thomas-aprelev.pdf">
-                  Download CV as .pdf
-                </a>
+              <a class="button is-small is-link is-light" href="static/cv-thomas-aprelev.pdf">
+                Download CV as .pdf
+              </a>
             </div>
           </div>
         </div>
       </div>
     </nav>
-    <section class="hero is-fullheight-with-navbar is-dark">
-        <div class="hero-body">
-          <div class="container">
-            <p class="title is-4">
-              Interested in working&nbsp;together?
-            </p>
-            <p>
-              Get to know me. <br>Say
-              <em class="has-text-info">
-                hello
-              </em>
-              to
-              <a class="has-text-link" href="mailto:thomas@apr.lv">
-                thomas
-              </a>
-              at apr.lv.
-            </p>
+
+    <section class="hero is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title is-4">
+            Interested in working&nbsp;together?
+          </p>
+          <p class="subtitle is-5">
+            Get to know me.
+          </p>
+          <div class="buttons">
+            <a class="button is-link is-light" href="https://github.com/aprelev">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Star me on Github</span>
+            </a>
+            <a class="button is-link is-light" href="https://www.linkedin.com/in/aprlv/en">
+              <span class="icon">
+                <i class="fab fa-linkedin"></i>
+              </span>
+              <span>Contact me on LinkedIn</span>
+            </a>
+            <a class="button is-link is-light" href="mailto:thomas@apr.lv">
+              <span class="icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span>Send me an email</span>
+            </a>
           </div>
         </div>
+      </div>
     </section>
   </body>
 </html>

@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Projects /apr.lv</title>
-    <link rel="stylesheet" href="css/theme-darkly.css"/>
-    <link rel="stylesheet" href="css/font-pacifico.css"/>
+    <title>Projects</title>
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/font-pacifico.css"/>
+    <script defer src="assets/js/fontawesome-5.min.js"></script>
   </head>
   <body>
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item has-text-link" style="font-family: 'Pacifico" href="index">
+          <a class="navbar-item" style="font-family: 'Pacifico" href="index">
             apr.lv
           </a>
           <a class="navbar-item is-tab" href="resume">
@@ -27,7 +28,7 @@
         <div class="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-item">
-              <a class="button is-small is-info" href="static/cv-thomas-aprelev.pdf">
+              <a class="button is-small is-link is-light" href="static/cv-thomas-aprelev.pdf">
                 Download CV as .pdf
               </a>
             </div>
@@ -43,60 +44,59 @@
           <p class="subtitle is-6">Quick overview</p>
         </div>
 
-        <div class="columns is-variable is-1 is-multiline">
-          <div class="column is-one-third">
+        <div class="columns is-variable is-multiline">
+          <div class="column is-half">
             <div class="card">
               <header class="card-header">
                 <p class="card-header-title">lg15</p>
                 <a href="https://github.com/aprelev/lg15" class="card-header-icon">
-                  <span class="button is-small is-link">View on GitHub</span>
+                  <span class="icon is-small">
+                    <i class="fab fa-github"></i>
+                  </span>
                 </a>
               </header>
               <div class="card-content">
                 <div class="tags are-normal">
-                  <span class="tag is-primary">Cryptography</span>
-                  <span class="tag is-primary">SIMD</span>
-                  <span class="tag is-primary">C99</span>
-                  <span class="tag is-primary">Apache 2.0</span>
+                  <span class="tag is-info is-light">Cryptography</span>
+                  <span class="tag is-info is-light">SIMD</span>
+                  <span class="tag is-info is-light">C99</span>
+                  <span class="tag is-info is-light">Apache 2.0</span>
                 </div>
                 <div class="content">
                   <p>
-                    Multiple implementations of Russian national block cipher GOST R 34.12-2015 Kuznyechik
-                    tuned to yield high performance on <code>amd64</code> processors.
+                    Implementation of the <strong>Kuznyechik</strong>,
+                    Russian national GOST&nbsp;R&nbsp;34.12-2015 block cipher,
+                    optimised for high throughput on processors with SSE2.
                   </p>
                   <p>
-                    It was written to accompany the <a href="https://habr.com/en/post/312224/">article on performance</a>
-                    of said block cipher.
+                    Read more in <a href="https://habr.com/en/post/312224/">this article</a>.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="column is-one-third">
+          <div class="column is-half">
               <div class="card">
                 <header class="card-header">
                   <p class="card-header-title">contest</p>
                   <a href="https://github.com/aprelev/contest" class="card-header-icon">
-                    <span class="button is-small is-link">View on GitHub</span>
+                    <span class="icon is-small">
+                      <i class="fab fa-github"></i>
+                    </span>
                   </a>
                 </header>
                 <div class="card-content">
                   <div class="tags are-normal">
-                    <span class="tag is-primary">DDT</span>
-                    <span class="tag is-primary">Framework</span>
-                    <span class="tag is-primary">C99</span>
-                    <span class="tag is-primary">GPL 3.0</span>
+                    <span class="tag is-info is-light">DDT</span>
+                    <span class="tag is-info is-light">Framework</span>
+                    <span class="tag is-info is-light">C99</span>
+                    <span class="tag is-info is-light">GPL 3.0</span>
                   </div>
                   <div class="content">
                     <p>
-                      Extendable framework for data-driven testing; it provides means to
-                      extract data from files in a number of formats, and
-                      and utilise it in user-defined tests.
-                    </p>
-                    <p>
-                      The primary purpose of this project was for it to be used as an
-                      automated CAVP conformance testing tool, where one would have to test
-                      his implementation of cryptographic mechanism against data provided by validating authority.
+                      This data-driven testing framework
+                      allows to implement and execute tests
+                      based on data read from files in a number of formats.
                     </p>
                   </div>
                 </div>

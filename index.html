@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta http-equiv="refresh" content="0; url=resume"/>
-    <title>Home /apr.lv</title>
-    <link rel="stylesheet" href="css/theme-darkly.css"/>
-    <link rel="stylesheet" href="css/font-pacifico.css"/>
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/font-pacifico.css"/>
+    <script defer src="assets/js/fontawesome-5.min.js"></script>
   </head>
   <body>
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item has-text-link" style="font-family: 'Pacifico'" href="index">
+          <a class="navbar-item has-text-link" style="font-family: 'Pacifico" href="index">
             apr.lv
           </a>
-          <a class="navbar-item" href="resume">
+          <a class="navbar-item is-tab" href="resume">
             Résumé
           </a>
           <a class="navbar-item is-tab" href="projects">
@@ -28,29 +28,46 @@
         <div class="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-item">
-                <a class="button is-small is-info" href="static/cv-thomas-aprelev.pdf">
-                  Download CV as .pdf
-                </a>
+              <a class="button is-small is-link is-light" href="static/cv-thomas-aprelev.pdf">
+                Download CV as .pdf
+              </a>
             </div>
           </div>
         </div>
       </div>
     </nav>
 
-    <section class="section">
-      <div class="container">
-        <div class="content">
-          <p class="title is-4">Have any ideas about landing page?</p>
-          <p class="subtitle is-6">I am open to suggestions.</p>
-
-          <p>
-            Otherwise, see my <a href="resume">résumé</a>
-            or <a href="projects">projects</a> I've worked on.
+    <section class="hero is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title is-4">
+            Hello. I'm Tom,
           </p>
+          <p class="subtitle is-5">
+            a back-end software engineer with expertise in information security.
+          </p>
+          <div class="buttons">
+            <button class="button is-link is-light">
+              <span class="icon">
+                <i class="fas fa-user-tie"></i>
+              </span>
+              <span>Read my resume</span>
+            </button>
+            <button class="button is-link is-light">
+              <span class="icon">
+                <i class="fas fa-code"></i>
+              </span>
+              <span>Browse my projects</span>
+            </button>
+            <button class="button is-link is-light">
+              <span class="icon">
+                <i class="fas fa-at"></i>
+              </span>
+              <span>Contact me</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
-
-    <br>
   </body>
 </html>
